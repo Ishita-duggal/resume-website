@@ -1,0 +1,103 @@
+/* Defining variables for easy theme management */
+:root {
+    --bg-color: #f4f4f9;
+    --text-color: #333333;
+    --primary-color: #2c3e50;
+    --link-color:  #3498db;
+
+}
+
+/* 2. Styling the main body: */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Styling the Header: */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header a{
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+/* 4. Centering the main content */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+header h1 {
+    color: white;
+}
+
+/* 5. Styling Links: */
+section {
+    margin-bottom: 2.5rem; 
+}
+
+/* 6. Styling the job and project cards */
+.job, .project {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 5px solid var(--primary-color);
+}
+
+/* 7. Tweak the text spacingg inside the cards */
+.job h3, .project h3 {
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+}
+
+.job p {
+    font-style: italic;
+    color: #666;
+    margin-top: 0;
+}
+
+/* Dark Mode theme */
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --primary-color: #4da3ff;
+}
+
+/* Making card dark: */
+.dark-mode .job, .dark-mode .project {
+    background-color: #1e1e1e;
+}
+
+/* Styling the toggle button: */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

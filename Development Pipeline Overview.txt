@@ -1,0 +1,99 @@
+Development Pipeline Overview: 
+Files Created
+index.html: Holds the markup, content, and semantic document structure.
+
+style.css: Controls visual styling, color themes, spacing, flexbox alignment, and responsive layout.
+
+script.js: Handles DOM selection, user interactions, state switching (light/dark mode), and data persistence.
+
+
+
+Phase 1: HTML Architecture & Semantic Structure (index.html)
+Step 1: Document Foundation & Header
+
+Set up HTML5 boilerplate (<!DOCTYPE html>, <html>, <head>, <body>).
+
+Add metadata tags (UTF-8, viewport for responsiveness).
+
+Build the <header> element containing your name, contact information, and external profile links (<a> tags with target attributes).
+
+Step 2: Core Resume Sections
+
+Construct the <main> container and semantic <section> blocks for Professional Summary, Education, and Technical Skills.
+
+Use appropriate heading hierarchy (<h1>, <h2>, <h3>) and unordered lists (<ul>, <li>).
+
+Step 3: Internships & Projects Layout
+
+Build structured cards/containers (<div> or <article>) for experience items (IBM, CarDeckOut, Aadi Foundation).
+
+Build project containers for showcase items (Pan-Organ AI Dashboard, E-Commerce Website, EdTech Website).
+
+Step 4: Script & Stylesheet Connections
+
+Link style.css in the <head> using <link rel="stylesheet">.
+
+Link script.js before the closing </body> tag using <script src="script.js">.
+
+Phase 2: CSS Styling & Visual Design (style.css)
+Step 1: CSS Reset & Root Variables
+
+Apply a global box-model reset (* { box-sizing: border-box; margin: 0; padding: 0; }).
+
+Define :root CSS custom properties (variables) for primary colors, background colors, text colors, and spacing.
+
+Step 2: Base Typography & Structural Styling
+
+Style font families, line heights, global background colors, and section margins.
+
+Style headers, navigation links, hover effects (:hover), and bullet points.
+
+Step 3: Flexbox Layout & Card Formatting
+
+Apply Flexbox (display: flex, justify-content, align-items, gap) to header links and skill badges.
+
+Add visual containers to internship and project cards using background color contrasts, padding, and border radii.
+
+Step 4: Dark Mode Theme Styling
+
+Define a .dark-mode CSS class overriding root color variables.
+
+Step 5: Responsive Design
+
+Implement CSS Media Queries (@media (max-width: 768px)) to adjust grid layouts, font sizes, and padding for mobile screens.
+
+Phase 3: JavaScript Interactivity (script.js)
+Step 1: DOM Element Selection
+
+Select HTML elements using document.getElementById() or document.querySelector().
+
+Step 2: Event Listener Setup
+
+Attach a click event listener (addEventListener('click', ...) ) to the theme toggle button.
+
+Step 3: Class Toggling & State Management
+
+Use classList.toggle('dark-mode') to alternate between light and dark themes.
+
+Update button text dynamically using conditional logic (if/else) based on current state.
+
+Step 4: LocalStorage Persistence
+
+Save user theme preference to localStorage so the setting persists across page reloads.
+
+Read saved theme preference on page load.
+
+Phase 4: Integration, Testing & Revision Review
+Step 1: Markup & Style Validation
+
+Inspect HTML structure and CSS styles in browser Developer Tools (F12).
+
+Step 2: Interactive Testing
+
+Verify link targets, theme toggling, and page responsiveness on different viewport sizes.
+
+Step 3: Concept Revision Recap
+
+Review key concepts tested: Semantic HTML, CSS Box Model, Flexbox, Specificity, Variables, DOM Tree, Event Loop, and LocalStorage.
+
+Ready to begin Sprint 1? Write the HTML boilerplate and header section for index.html and paste your code below.
